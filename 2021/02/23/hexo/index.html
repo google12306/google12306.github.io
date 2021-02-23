@@ -27,10 +27,12 @@
 <meta property="og:site_name" content="Van Fork">
 <meta property="og:description" content="Hexo安装配置教程">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/google12306/images/img/Debian.png">
 <meta property="article:published_time" content="2021-02-23T09:40:02.000Z">
-<meta property="article:modified_time" content="2021-02-23T09:40:02.685Z">
+<meta property="article:modified_time" content="2021-02-23T10:04:03.789Z">
 <meta property="article:author" content="Van Fork">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/google12306/images/img/Debian.png">
 
 <link rel="canonical" href="http://example.com/2021/02/23/hexo/">
 
@@ -183,8 +185,9 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-02-23 17:40:02" itemprop="dateCreated datePublished" datetime="2021-02-23T17:40:02+08:00">2021-02-23</time>
+              <time title="创建时间：2021-02-23 17:40:02 / 修改时间：18:04:03" itemprop="dateCreated datePublished" datetime="2021-02-23T17:40:02+08:00">2021-02-23</time>
             </span>
 
           
@@ -208,7 +211,7 @@
 <li>管理员运行power shell，输入<code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart</code>，重启计算机</li>
 <li>下载<a target="_blank" rel="noopener" href="http://pan-yz.chaoxing.com/share/info/368313c6aa85d762" title="Debian Stretch">Debian 9</a></li>
 <li>执行<code>add-appxpackage filename</code>进行安装，之后按提示设置用户名和密码</li>
-<li>进行换源操作，使用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/debian/">清华大学开源镜像站</a>  </li>
+<li>进行换源操作，使用<a target="_blank" rel="noopener" href="https://mirrors.tuna.tsinghua.edu.cn/help/debian/">清华大学开源镜像站</a><br><img src="https://cdn.jsdelivr.net/gh/google12306/images/img/Debian.png" alt="Tuna"></li>
 </ol>
 <h3 id="VS-Code安装教程"><a href="#VS-Code安装教程" class="headerlink" title="VS Code安装教程"></a>VS Code安装教程</h3><ol>
 <li>下载<a target="_blank" rel="noopener" href="https://code.visualstudio.com/#alt-downloads">VS Code</a>并安装</li>
@@ -217,8 +220,8 @@
 <h3 id="node-js安装教程"><a href="#node-js安装教程" class="headerlink" title="node.js安装教程"></a>node.js安装教程</h3><ol>
 <li>node.js提供了多种安装方式，访问<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/">官网</a>获取详情，此处使用包管理器进行安装</li>
 <li>Linux下安装<code>git</code>,<code>curl</code>等软件包，再执行以下命令：<br> <code># Using Debian, as root</code><ol>
-<li>curl -fsSL <a target="_blank" rel="noopener" href="https://deb.nodesource.com/setup_14.x">https://deb.nodesource.com/setup_14.x</a> | bash -  </li>
-<li>apt-get install -y nodejs</li>
+<li>curl -fsSL <a target="_blank" rel="noopener" href="https://deb.nodesource.com/setup_12.x">https://deb.nodesource.com/setup_12.x</a> | bash -  </li>
+<li>apt install nodejs</li>
 </ol>
 </li>
 <li>安装过程中已附带安装npm，对npm进行换源操作，<code>npm config set registry https://registry.npm.taobao.org</code>，再输入<code>npm config list</code>进行验证</li>
