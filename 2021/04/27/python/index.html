@@ -28,7 +28,7 @@
 <meta property="og:description" content="How to use python">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-04-27T09:16:27.000Z">
-<meta property="article:modified_time" content="2021-05-22T12:19:04.696Z">
+<meta property="article:modified_time" content="2021-07-07T04:39:29.878Z">
 <meta property="article:author" content="Van Fork">
 <meta name="twitter:card" content="summary">
 
@@ -191,7 +191,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-22 20:19:04" itemprop="dateModified" datetime="2021-05-22T20:19:04+08:00">2021-05-22</time>
+                <time title="修改时间：2021-07-07 12:39:29" itemprop="dateModified" datetime="2021-07-07T12:39:29+08:00">2021-07-07</time>
               </span>
 
           
@@ -336,6 +336,278 @@
 <p>Use it in an <code>if</code> statement</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">txt = <span class="string">&quot;The best thing  in life is free&quot;</span></span><br><span class="line"><span class="keyword">if</span> <span class="string">&quot;free&quot;</span> <span class="keyword">in</span> txt:</span><br><span class="line">    print(<span class="string">&quot;Yes, &#x27;free&#x27; is present.&quot;</span>)</span><br><span class="line">    print(<span class="string">&quot;test&quot;</span>)</span><br></pre></td></tr></table></figure>
 <p>To check if a certain phrase or character is NOT present in a string, we can use the keyword <code>not in</code></p>
+<h3 id="Modify-Strings"><a href="#Modify-Strings" class="headerlink" title="Modify Strings"></a>Modify Strings</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">txt = <span class="string">&quot;The best thing  in life is free&quot;</span></span><br><span class="line">print(txt.upper())</span><br><span class="line">print(txt.lower())</span><br></pre></td></tr></table></figure>
+<h3 id="Replace-Strings"><a href="#Replace-Strings" class="headerlink" title="Replace Strings"></a>Replace Strings</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">txt = <span class="string">&quot;The best thing  in life is free&quot;</span></span><br><span class="line">print(txt.replace(<span class="string">&quot;i&quot;</span>,<span class="string">&quot;I&quot;</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="Split-Strings"><a href="#Split-Strings" class="headerlink" title="Split Strings"></a>Split Strings</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">txt = <span class="string">&quot;The best thing  in life is free&quot;</span></span><br><span class="line">print(txt.split(<span class="string">&quot; &quot;</span>))	<span class="comment"># return [&#x27;The&#x27;, &#x27;best&#x27;, &#x27;thing&#x27;, &#x27;in&#x27;, &#x27;life&#x27;, &#x27;is&#x27;, &#x27;free!&#x27;]</span></span><br></pre></td></tr></table></figure>
+<h3 id="Format-Strings"><a href="#Format-Strings" class="headerlink" title="Format  Strings"></a>Format  Strings</h3><p>We can combine strings and numbers by using the <code>format()</code> method.<br>The <code>format()</code> method takes the passed arguments,formats them,and place them in the string where the placeholders <code>&#123;&#125;</code> are:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">age=<span class="number">11</span></span><br><span class="line">score=<span class="number">66.6</span></span><br><span class="line">grade=<span class="string">&quot;C&quot;</span></span><br><span class="line">result=<span class="string">&quot;He is &#123;&#125;,and get &#123;&#125;,get &#123;&#125;&quot;</span></span><br><span class="line">print(result.<span class="built_in">format</span>(age,score,grade))</span><br><span class="line">result2=<span class="string">&quot;He is &#123;2&#125;,and get &#123;0&#125;,get &#123;1&#125;&quot;</span></span><br><span class="line">print(result2.<span class="built_in">format</span>(age,score,grade))</span><br><span class="line"></span><br><span class="line"><span class="comment"># He is 11,and get 66.6,get C</span></span><br><span class="line"><span class="comment"># He is C,and get 11,get 66.6</span></span><br></pre></td></tr></table></figure>
+<h3 id="Escape-Characters"><a href="#Escape-Characters" class="headerlink" title="Escape Characters"></a>Escape Characters</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">str</span>=<span class="string">&quot;Hello \&quot;World\&quot;,Nice to meet you&quot;</span></span><br><span class="line">print(<span class="built_in">str</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Python-Collections-Arrays"><a href="#Python-Collections-Arrays" class="headerlink" title="Python Collections(Arrays)"></a>Python Collections(Arrays)</h2><p>There are four colletion data types in the Python programming language:  </p>
+<ul>
+<li><strong>List</strong> is a collection which is ordered and changeable.Allows duplicate members.</li>
+</ul>
+<ul>
+<li><strong>Tuple</strong> is a collection which is ordered and unchangeable.Allows duplicate members.</li>
+</ul>
+<ul>
+<li><strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.</li>
+</ul>
+<ul>
+<li><strong>Dictionary</strong> is a collection which is ordered and changeable. No duplicate members.<blockquote>
+<p>As of Python version 3.7,dictionarys are ordered. In Python 3.6 and earlier,dictionaries are unordered.  </p>
+</blockquote>
+</li>
+</ul>
+<h3 id="List-Methods"><a href="#List-Methods" class="headerlink" title="List Methods"></a>List Methods</h3><table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Descriptin</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">append()</td>
+<td align="left">Adds an element at the end of the list</td>
+</tr>
+<tr>
+<td align="left">clear()</td>
+<td align="left">Removes all the elements from the list</td>
+</tr>
+<tr>
+<td align="left">copy()</td>
+<td align="left">Returns a copy of the list</td>
+</tr>
+<tr>
+<td align="left">count()</td>
+<td align="left">Returns the numbers of elelments with the specified value</td>
+</tr>
+<tr>
+<td align="left">extend()</td>
+<td align="left">Add the elements of a list(or any iterable),to the end of the current list</td>
+</tr>
+<tr>
+<td align="left">index()</td>
+<td align="left">Returns the index of the first element with the specials value</td>
+</tr>
+<tr>
+<td align="left">insert()</td>
+<td align="left">Adds an element at the specified position</td>
+</tr>
+<tr>
+<td align="left">pop()</td>
+<td align="left">Removes the element at the specified position</td>
+</tr>
+<tr>
+<td align="left">remove()</td>
+<td align="left">Removes the item with the specified value</td>
+</tr>
+<tr>
+<td align="left">reverse()</td>
+<td align="left">Reverses the order of the list</td>
+</tr>
+<tr>
+<td align="left">sort()</td>
+<td align="left">Sorts the list</td>
+</tr>
+</tbody></table>
+<h3 id="Tuple-Methods"><a href="#Tuple-Methods" class="headerlink" title="Tuple Methods"></a>Tuple Methods</h3><table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">count()</td>
+<td align="left">Returns the number of times a specified value occurs in a tuple</td>
+</tr>
+<tr>
+<td align="left">index()</td>
+<td align="left">Searches the tuple for a specified value and returns the position of where it was found</td>
+</tr>
+</tbody></table>
+<h3 id="Set-Methods"><a href="#Set-Methods" class="headerlink" title="Set Methods"></a>Set Methods</h3><table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">add()</td>
+<td align="left">Adds an element to the set</td>
+</tr>
+<tr>
+<td align="left">clear()</td>
+<td align="left">Removes all the elements from the set</td>
+</tr>
+<tr>
+<td align="left">copy()</td>
+<td align="left">Returns a copy of the set</td>
+</tr>
+<tr>
+<td align="left">difference()</td>
+<td align="left">Returns a set containing the difference between two or more sets</td>
+</tr>
+<tr>
+<td align="left">difference_update()</td>
+<td align="left">Removes the items in this set that are also included in another, specified set</td>
+</tr>
+<tr>
+<td align="left">discard()</td>
+<td align="left">Remove the specified item</td>
+</tr>
+<tr>
+<td align="left">intersection()</td>
+<td align="left">Returns a set, that is the intersection of two other sets</td>
+</tr>
+<tr>
+<td align="left">intersection_update()</td>
+<td align="left">Removes the items in this set that are not present in other, specified set(s)</td>
+</tr>
+<tr>
+<td align="left">isdisjoint()</td>
+<td align="left">Returns whether two sets have a intersection or not</td>
+</tr>
+<tr>
+<td align="left">issubset()</td>
+<td align="left">Returns whether another set contains this set or not</td>
+</tr>
+<tr>
+<td align="left">issuperset()</td>
+<td align="left">Returns whether this set contains another set or not</td>
+</tr>
+<tr>
+<td align="left">pop()</td>
+<td align="left">Removes an element from the set</td>
+</tr>
+<tr>
+<td align="left">remove()</td>
+<td align="left">Removes the specified element</td>
+</tr>
+<tr>
+<td align="left">symmetric_difference()</td>
+<td align="left">Returns a set with the symmetric differences of two sets</td>
+</tr>
+<tr>
+<td align="left">symmetric_difference_update()</td>
+<td align="left">inserts the symmetric differences from this set and another</td>
+</tr>
+<tr>
+<td align="left">union()</td>
+<td align="left">Return a set containing the union of sets</td>
+</tr>
+<tr>
+<td align="left">update()</td>
+<td align="left">Update the set with the union of this set and others</td>
+</tr>
+</tbody></table>
+<h3 id="Dictionary-Methods"><a href="#Dictionary-Methods" class="headerlink" title="Dictionary Methods"></a>Dictionary Methods</h3><table>
+<thead>
+<tr>
+<th align="left">Method</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">clear()</td>
+<td align="left">Removes all the elements from the dictionary</td>
+</tr>
+<tr>
+<td align="left">copy()</td>
+<td align="left">Returns a copy of the dictionary</td>
+</tr>
+<tr>
+<td align="left">fromkeys()</td>
+<td align="left">Returns a dictionary with the specified keys and value</td>
+</tr>
+<tr>
+<td align="left">get()</td>
+<td align="left">Returns the value of the specified key</td>
+</tr>
+<tr>
+<td align="left">items()</td>
+<td align="left">Returns a list containing a tuple for each key value pair</td>
+</tr>
+<tr>
+<td align="left">keys()</td>
+<td align="left">Returns a list containing the dictionary’s keys</td>
+</tr>
+<tr>
+<td align="left">pop()</td>
+<td align="left">Removes the element with the specified key</td>
+</tr>
+<tr>
+<td align="left">popitem()</td>
+<td align="left">Removes the last inserted key-value pair</td>
+</tr>
+<tr>
+<td align="left">setdefault()</td>
+<td align="left">Returns the value of the specified key. If the key does not exist: insert the key, with the specified value</td>
+</tr>
+<tr>
+<td align="left">update()</td>
+<td align="left">Updates the dictionary with the specified key-value pairs</td>
+</tr>
+<tr>
+<td align="left">values()</td>
+<td align="left">Returns a list of all the values in the dictionary</td>
+</tr>
+</tbody></table>
+<h2 id="Python-Functions"><a href="#Python-Functions" class="headerlink" title="Python Functions"></a>Python Functions</h2><p>A function is a block of code which only runs when it is called.  </p>
+<p>You can pass data, known as parameters, into a function.</p>
+<p>A function can return data as a result.</p>
+<h3 id="Simple-Example"><a href="#Simple-Example" class="headerlink" title="Simple Example"></a>Simple Example</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span>(<span class="params">name</span>):</span></span><br><span class="line">    print(<span class="string">&quot;Hello &quot;</span>+name)</span><br><span class="line"></span><br><span class="line">my_func(<span class="string">&quot;van&quot;</span>)    <span class="comment"># Hello van</span></span><br><span class="line">my_func(<span class="string">&quot;Tim&quot;</span>)    <span class="comment"># Hello Tim</span></span><br></pre></td></tr></table></figure>
+<h3 id="Arbitrary-Arguments-args"><a href="#Arbitrary-Arguments-args" class="headerlink" title="Arbitrary Arguments, *args"></a>Arbitrary Arguments, *args</h3><p>If you do not know how many arguments that will be passed into your function, add a * before the parameter name in the function definition.</p>
+<p>This way the function will receive a <code>tuple</code> of arguments, and can access the items accordingly:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span>(<span class="params">*name</span>):</span></span><br><span class="line">    print(<span class="string">&quot;Hello &quot;</span>+name[<span class="number">2</span>])</span><br><span class="line"></span><br><span class="line">my_func(<span class="string">&quot;Tom&quot;</span>,<span class="string">&quot;Jack&quot;</span>,<span class="string">&quot;Tim&quot;</span>)    <span class="comment"># Hello Tim</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>Arbitrary Arguments are often shortened to *args in Python documentations.  </p>
+</blockquote>
+<h3 id="Keyword-Arguments"><a href="#Keyword-Arguments" class="headerlink" title="Keyword Arguments"></a>Keyword Arguments</h3><p>You can also send arguments with the key = value syntax.</p>
+<p>This way the order of the arguments does not matter.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">my_func</span>(<span class="params">a,b,c</span>):</span></span><br><span class="line">    print(<span class="string">&quot;Hello &quot;</span> + b)</span><br><span class="line"></span><br><span class="line">my_func(c=<span class="string">&quot;Tom&quot;</span>,b=<span class="string">&quot;Jack&quot;</span>,a=<span class="string">&quot;Tim&quot;</span>)    <span class="comment"># Hello Jack</span></span><br></pre></td></tr></table></figure>
+<h2 id="Python-Lambda"><a href="#Python-Lambda" class="headerlink" title="Python Lambda"></a>Python Lambda</h2><p>A lambda function is a small anonymous function.</p>
+<p>A lambda function can take any number of arguments, but can only have one expression.</p>
+<h4 id="Synax"><a href="#Synax" class="headerlink" title="Synax"></a>Synax</h4><blockquote>
+<p>lambda arguments : expression</p>
+</blockquote>
+<h4 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x=<span class="keyword">lambda</span> a,b:a*b</span><br><span class="line">print(x(<span class="number">2</span>,<span class="number">3</span>))    <span class="comment"># 6</span></span><br></pre></td></tr></table></figure>
+<h2 id="Python-Classes-Objects"><a href="#Python-Classes-Objects" class="headerlink" title="Python Classes/Objects"></a>Python Classes/Objects</h2><p>Python is an object oriented programming language.</p>
+<p>Almost everything in Python is an object, with its properties and methods.</p>
+<p>A Class is like an object constructor, or a “blueprint” for creating objects.</p>
+<h3 id="The-init-Function"><a href="#The-init-Function" class="headerlink" title="The __init__() Function"></a>The <code>__init__()</code> Function</h3><p>All classes have a function called <code>__init__()</code>, which is always executed when the class is being initiated.</p>
+<p>Use the <code>__init__()</code> function to assign values to object properties, or other operations that are necessary to do when the object is being created:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self,name,age</span>):</span></span><br><span class="line">        self.name=name</span><br><span class="line">        self.age=age</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>(<span class="params">self</span>):</span></span><br><span class="line">        print(<span class="string">&quot;Hello &quot;</span>+self.name)</span><br><span class="line"></span><br><span class="line">p=Person(<span class="string">&quot;Tom&quot;</span>,<span class="number">10</span>)</span><br><span class="line">print(p)	<span class="comment"># &lt;__main__.Person object at 0x000002487CE7B9D0&gt;</span></span><br><span class="line">print(p.name)	<span class="comment"># Tom</span></span><br><span class="line">print(p.age)	<span class="comment"># 10</span></span><br><span class="line">p.myfunc()    <span class="comment">#Hello Tom</span></span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">&gt; Note: The `self` parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.  </span><br><span class="line"></span><br><span class="line"><span class="comment">### The self Parameter</span></span><br><span class="line">The `self` parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.</span><br><span class="line"></span><br><span class="line">It does <span class="keyword">not</span> have to be named `self` , you can call it whatever you like, but it has to be the first parameter of <span class="built_in">any</span> function <span class="keyword">in</span> the <span class="class"><span class="keyword">class</span>:</span></span><br><span class="line">``` python</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Person</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">myobj,name,age</span>):</span></span><br><span class="line">        myobj.name=name</span><br><span class="line">        myobj.age=age</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>(<span class="params">abc</span>):</span></span><br><span class="line">        print(<span class="string">&quot;Hello &quot;</span>+abc.name)</span><br><span class="line"></span><br><span class="line">p=Person(<span class="string">&quot;Tom&quot;</span>,<span class="number">10</span>)</span><br><span class="line">print(p)</span><br><span class="line">print(p.name)</span><br><span class="line">print(p.age)</span><br><span class="line">p.myfunc()</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line"><span class="comment">### Delete Object/Object Properties</span></span><br><span class="line">``` python</span><br><span class="line"><span class="keyword">del</span> p.name</span><br><span class="line"><span class="keyword">del</span> p</span><br></pre></td></tr></table></figure>
+<h2 id="Python-Try…Except"><a href="#Python-Try…Except" class="headerlink" title="Python Try…Except"></a>Python Try…Except</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">  print(x)</span><br><span class="line"><span class="keyword">except</span>:</span><br><span class="line">  print(<span class="string">&quot;Something went wrong&quot;</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">  print(<span class="string">&quot;The &#x27;try except&#x27; is finished&quot;</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Python-File-Handing"><a href="#Python-File-Handing" class="headerlink" title="Python File Handing"></a>Python File Handing</h2><p>The key function for working with files in Python is the <code>open()</code> function.</p>
+<p>The <code>open()</code> function takes two parameters; filename, and mode.</p>
+<p>There are four different methods (modes) for opening a file:</p>
+<blockquote>
+<p>“r” - Read - Default value. Opens a file for reading, error if the file does not exist<br>“a” - Append - Opens a file for appending, creates the file if it does not exist<br>“w” - Write - Opens a file for writing, creates the file if it does not exist<br>“x” - Create - Creates the specified file, returns an error if the file exists  </p>
+</blockquote>
+<p>In addition you can specify if the file should be handled as binary or text mode  </p>
+<blockquote>
+<p>“t” - Text - Default value. Text mode<br>“b” - Binary - Binary mode (e.g. images)  </p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;Hello.cpp&quot;</span>,<span class="string">&quot;rt&quot;</span>)</span><br><span class="line">print(f.read())</span><br></pre></td></tr></table></figure>
+<p>By default the read() method returns the whole text, but you can also specify how many characters you want to return:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;Hello.cpp&quot;</span>,<span class="string">&quot;rt&quot;</span>)</span><br><span class="line">print(f.read(<span class="number">6</span>))</span><br></pre></td></tr></table></figure>
+<p>You can return one line by using the readline() method:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;demofile.txt&quot;</span>, <span class="string">&quot;r&quot;</span>)</span><br><span class="line">print(f.readline())</span><br></pre></td></tr></table></figure>
+<p>By calling readline() two times, you can read the two first lines:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">f = <span class="built_in">open</span>(<span class="string">&quot;demofile.txt&quot;</span>, <span class="string">&quot;r&quot;</span>)</span><br><span class="line">print(f.readline())</span><br><span class="line">print(f.readline())</span><br></pre></td></tr></table></figure>
+<p>By looping through the lines of the file, you can read the whole file, line by line:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;Hello.cpp&quot;</span>,<span class="string">&quot;rt&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> f:</span><br><span class="line">	print(x)</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">It <span class="keyword">is</span> a good practice to always close the file when you are done <span class="keyword">with</span> it.</span><br><span class="line">``` python</span><br><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;Hello.cpp&quot;</span>,<span class="string">&quot;rt&quot;</span>)</span><br><span class="line"><span class="keyword">for</span> x <span class="keyword">in</span> f:</span><br><span class="line">	print(x)</span><br><span class="line">f.close()</span><br><span class="line">```  </span><br><span class="line">&gt; Note: You should always close your files, <span class="keyword">in</span> some cases, due to buffering, changes made to a file may <span class="keyword">not</span> show until you close the file.</span><br><span class="line"></span><br><span class="line"><span class="comment">### Write to an File</span></span><br><span class="line">``` python</span><br><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>,<span class="string">&quot;wt&quot;</span>)</span><br><span class="line">f.write(<span class="string">&quot;Hello World!&quot;</span>)</span><br><span class="line">f.close()</span><br><span class="line"></span><br><span class="line">f=<span class="built_in">open</span>(<span class="string">&quot;test.txt&quot;</span>,<span class="string">&quot;rt&quot;</span>)</span><br><span class="line">print(f.read())</span><br><span class="line">f.close()</span><br></pre></td></tr></table></figure>
+<h3 id="Python-Delete-File"><a href="#Python-Delete-File" class="headerlink" title="Python Delete File"></a>Python Delete File</h3><p>To delete a file, you must import the OS module, and run its <code>os.remove()</code> function:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">if</span> os.path.exists(<span class="string">&quot;test.txt&quot;</span>):</span><br><span class="line">        os.remove(<span class="string">&quot;test.txt&quot;</span>)</span><br><span class="line">        print(<span class="string">&quot;Removed&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">        print(<span class="string">&quot;The file does not exist&quot;</span>)</span><br></pre></td></tr></table></figure>
+<p>To delete an entire folder, use the os.rmdir() method:</p>
+<pre><code class="python">import os
+os.rmdir(&quot;myfolder&quot;)
+</code></pre>
+<blockquote>
+<p>Note: You can only remove empty folders.</p>
+</blockquote>
 
     </div>
 
@@ -354,7 +626,10 @@
     <a href="/2021/03/02/profile/" rel="prev" title="Profile">
       <i class="fa fa-chevron-left"></i> Profile
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2021/06/01/docker/" rel="next" title="Docker">
+      Docker <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -413,7 +688,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-Tutorial"><span class="nav-text">Python Tutorial</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comments"><span class="nav-text">Comments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Variables"><span class="nav-text">Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Casting"><span class="nav-text">Casting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Get-the-Type"><span class="nav-text">Get the Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unpack-a-Collection"><span class="nav-text">Unpack a Collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Global-Variables"><span class="nav-text">Global Variables</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Types"><span class="nav-text">Data Types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Setting-the-Data-Type"><span class="nav-text">Setting the Data Type</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Multiline-Strings"><span class="nav-text">Multiline Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strings-are-Arrays"><span class="nav-text">Strings are Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-Length"><span class="nav-text">String Length</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Check-String"><span class="nav-text">Check String</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Python-Tutorial"><span class="nav-text">Python Tutorial</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install"><span class="nav-text">Install</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Comments"><span class="nav-text">Comments</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Variables"><span class="nav-text">Variables</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Casting"><span class="nav-text">Casting</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Get-the-Type"><span class="nav-text">Get the Type</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Unpack-a-Collection"><span class="nav-text">Unpack a Collection</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Global-Variables"><span class="nav-text">Global Variables</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Data-Types"><span class="nav-text">Data Types</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Setting-the-Data-Type"><span class="nav-text">Setting the Data Type</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Strings"><span class="nav-text">Strings</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Multiline-Strings"><span class="nav-text">Multiline Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Strings-are-Arrays"><span class="nav-text">Strings are Arrays</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#String-Length"><span class="nav-text">String Length</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Check-String"><span class="nav-text">Check String</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Modify-Strings"><span class="nav-text">Modify Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Replace-Strings"><span class="nav-text">Replace Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Split-Strings"><span class="nav-text">Split Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Format-Strings"><span class="nav-text">Format  Strings</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Escape-Characters"><span class="nav-text">Escape Characters</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Collections-Arrays"><span class="nav-text">Python Collections(Arrays)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#List-Methods"><span class="nav-text">List Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Tuple-Methods"><span class="nav-text">Tuple Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Set-Methods"><span class="nav-text">Set Methods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Dictionary-Methods"><span class="nav-text">Dictionary Methods</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Functions"><span class="nav-text">Python Functions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Simple-Example"><span class="nav-text">Simple Example</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Arbitrary-Arguments-args"><span class="nav-text">Arbitrary Arguments, *args</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Keyword-Arguments"><span class="nav-text">Keyword Arguments</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Lambda"><span class="nav-text">Python Lambda</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Synax"><span class="nav-text">Synax</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example"><span class="nav-text">Example</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Classes-Objects"><span class="nav-text">Python Classes&#x2F;Objects</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#The-init-Function"><span class="nav-text">The __init__() Function</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-Try%E2%80%A6Except"><span class="nav-text">Python Try…Except</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Python-File-Handing"><span class="nav-text">Python File Handing</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Python-Delete-File"><span class="nav-text">Python Delete File</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -427,7 +702,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
